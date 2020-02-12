@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
   </script>
 </head>
 <body>
-	<form action="db_save.php" method ="POST">
+	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method ="POST">
 		Name:<input type="text" name="nome" palceholder="Insira seu nome"><br>
 		<button>Enviar!</button>
 		
